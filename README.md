@@ -24,7 +24,15 @@ Again, if you're stuck - attempt to do some research on your own, then check the
 
 #### Activity 1
 
-Take a look in `views/new_item.erb`. You'll see an existing form. Can you identify what each piece of the form does? What currently happens when you launch the server, visit `/items/new`, and try to submit the form?
+Take a look in `views/new_item.erb`. You'll see an existing form. Can you identify what each piece of the form does? 
+* Route is /items
+* Method is POST
+* Name is being defined as the text that is inputed, input for first part of the form equates to the item
+* Price is being defined as a NUMBER
+* Form submits, value is being set to "Create Item!" which I don't think has a route
+
+What currently happens when you launch the server, visit `/items/new`, and try to submit the form?
+* It redirects us to the items page, with no updated list
 
 Modify the code in the route that handles this request so that the data a user enters in the form is shown on the page after submission.
 
